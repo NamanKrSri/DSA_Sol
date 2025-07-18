@@ -1,7 +1,5 @@
 package Recursion;
-
 import java.util.ArrayList;
-
 public class NumberOfSusbsequenceWithSumK {
     public static int solve(int i, int[] arr, ArrayList<Integer> list, int runningSum, int sum){
         if(runningSum>sum){return 0;}
@@ -25,7 +23,7 @@ public class NumberOfSusbsequenceWithSumK {
 
     public static void main(String[] args) {
         ArrayList<Integer> list=new ArrayList<>();
-        int[] arr={0,1,2,3,4,5,6,7,8,9,10};
+        int[] arr={1,2,3,4,5,6,7,8,9,10};
         int sum=6;
         System.out.println("Total:"+solve(0,arr,list,0,6));
     }
