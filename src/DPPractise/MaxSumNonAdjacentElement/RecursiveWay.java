@@ -22,4 +22,9 @@ public class RecursiveWay {
         ArrayList<Integer> list=new ArrayList<>();
         System.out.println("maxSum of non adjacent element :"+maxSum(arr.length-1,arr,list));
     }
+
+    /*
+     * TC=O(2^n)
+     * SC=O(n)//recursion stack space
+     * */
 }

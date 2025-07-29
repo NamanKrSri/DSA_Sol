@@ -24,4 +24,9 @@ public class MemoizationWay {
         Arrays.fill(dp,-1);
         System.out.println("maxSum of non adjacent element :"+maxSum(arr.length-1,arr,dp,list));
     }
+
+    /*
+    * TC=O(n)
+    * SC=O(n)+O(n)
+    * */
 }
