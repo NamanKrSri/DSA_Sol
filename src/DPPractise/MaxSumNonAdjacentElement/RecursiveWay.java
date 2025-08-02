@@ -11,9 +11,9 @@ public class RecursiveWay {
         }
         //pick
         list.add(arr[index]);
-        int pick=arr[index]+maxSum(index-2,arr,list);//if u picked that index then now more to next to next element
+        int pick=arr[index]+maxSum(index-2,arr,list);//if u picked that index then now move next to next element
         //not pick
-        list.remove(list.size()-1);//u opted to next pick that index means now move to next element and choose weather to pick him or not
+        list.remove(list.size()-1);//u opted to not pick that index means now move to next element and choose weather to pick him or not
         int notPick=0+ maxSum(index-1,arr,list);
         return Math.max(pick,notPick);
     }

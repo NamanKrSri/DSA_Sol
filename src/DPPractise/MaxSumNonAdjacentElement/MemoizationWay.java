@@ -19,6 +19,7 @@ public class MemoizationWay {
     }
     public static void main(String[] args) {
         int[] arr={2,1,4,9};
+//        int[] arr2={-4,-2,-7,-1};
         ArrayList<Integer> list=new ArrayList<>();
         int[] dp=new int[arr.length];
         Arrays.fill(dp,-1);

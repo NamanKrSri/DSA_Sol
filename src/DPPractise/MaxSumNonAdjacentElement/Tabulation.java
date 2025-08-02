@@ -18,6 +18,7 @@ public class Tabulation {
     }
     public static void main(String[] args) {
         int[] arr={1,7,1,4,9,38};
+//        int[] arr={-3,-2,9};
         int[] dp=new int[arr.length];
         Arrays.fill(dp,-1);
         System.out.println("maxSum of non adjacent element :"+maxSum(arr,dp));
