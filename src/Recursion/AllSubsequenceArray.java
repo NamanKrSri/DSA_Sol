@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AllSubsequenceArray {
     public static void solve(int index, int[] array, ArrayList<Integer> list){
-        if(index== array.length){
+        if(index>= array.length){
             System.out.println(list.toString());
             return;
         }

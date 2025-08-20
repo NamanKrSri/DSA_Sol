@@ -1,9 +1,10 @@
 package Recursion;
 
 class AllSubsequenceString {
+   static int count=1;
     static void solve(int i, String s, String f) {
         if (i == s.length()) {
-            System.out.println(f);
+            System.out.println(count++ +" "+f);
             return;
         }
         //picking9
@@ -14,7 +15,8 @@ class AllSubsequenceString {
         solve(i + 1, s,  f);
     }
     public static void main(String args[]) {
-        String s = "abcefgh";
+        String s = "a*c";
+
         String f = "";
         System.out.println("All possible subsequences are: ");
         solve(0, s, f);
