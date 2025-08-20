@@ -18,8 +18,8 @@ public class Recursive {
         return up+left;
     }
     public static void main(String[] args){
-        int[][] grid={{1,3,1},{1,5,1},{4,2,1
-        }};
+        int[][] grid={{0,0,0},{0,-1,0},{0,0,0
+        },{0,0,0},{0,0,0}};
         System.out.println(function(grid.length-1,grid[0].length-1,grid));
     }
 }
