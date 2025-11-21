@@ -2,7 +2,7 @@ package DPPractise.MaxSumNonAdjacentElement;
 //********THIS CODE WILL FAIL WHEN ARRAY HAVE NEGATIVE VALUES****************************
 public class SpaceOptimized {
     public static void main(String[] args) {
-    int[] arr={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int[] arr={1, 2, 3, 1};
 //    int[] arr={-5,-1};
 //    int[] arr={-3,-2,9};
 //        int[] arr={-4, -2, -7, -1};

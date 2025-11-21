@@ -24,10 +24,15 @@ class UserMainCode {
     }
 
         public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            String input1 = sc.nextLine();
-            String output = repeatingCharacterExpansion(input1);
-            System.out.println(output);
+//            Scanner sc = new Scanner(System.in);
+//            String input1 = sc.nextLine();
+//            String output = repeatingCharacterExpansion(input1);
+//            System.out.println(output);
+
+            System.out.println("EXP");
+            String s="HH";
+            System.out.println(s.contains(" ")?(s.length()%2==0?(s.charAt(0)==s.charAt(s.length()-1)?"GOOD":"BAD"):"BAD"):"BAD");
+            System.out.println(s.contains(" ")?"BAD":(s.length()%2==0));
         }
 
 }

@@ -3,7 +3,7 @@ package DPPractise;
 //HOUSE ROBBER 2 @LEETCODE
 public class HouseRobber {
     public static void main(String[] args) {
-        int[] arr={1,3,4,112,43,23};
+        int[] arr={1,2,3,1};
         System.out.println("Max money after house robbing :"+ArrayFilling(arr));
     }
     static int ArrayFilling(int[] arr){
@@ -28,11 +28,11 @@ public class HouseRobber {
         int prev2=0;
         for(int i=1;i<arr.length;i++){
             int pick=arr[i];
-            if(i>1){pick+=prev;}
+            if(i>1){pick+=prev2;}
             int notPick=0+ prev2;//maxSum so far
-            int curr=Math.max(pick,notPick);
+            int curr=Math.max(pick,notPick);prev2=prev;
             prev=curr;
-            prev2=prev;
+
         }
         return prev;
     }
