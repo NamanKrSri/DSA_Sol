@@ -4,7 +4,7 @@ class AllSubsequenceString {
    static int count=1;
     static void solve(int i, String s, String f) {
         if (i == s.length()) {
-            System.out.println(count++ +" "+f);
+            System.out.println("Subsequence "+count++ +" "+f);
             return;
         }
         //picking9
@@ -15,7 +15,7 @@ class AllSubsequenceString {
         solve(i + 1, s,  f);
     }
     public static void main(String args[]) {
-        String s = "a*c";
+        String s = "abcdef";
 
         String f = "";
         System.out.println("All possible subsequences are: ");

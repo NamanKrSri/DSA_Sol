@@ -7,7 +7,7 @@ import java.util.List;
 public class AllSubsequenceArray {
     public static void solve(int index, int[] array, ArrayList<Integer> list){
         if(index>= array.length){
-            System.out.println(list.toString());
+            System.out.println("Subarray "+list.toString());
             return;
         }
         list.add(array[index]);//picking up the index
