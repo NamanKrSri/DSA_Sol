@@ -56,7 +56,7 @@ public class JobSequencing {
                     Job job=list.get(i);
                     arr[j]=job.deadline;
                     tprofit+=job.profit;
-                    totalJob+=1;
+                     totalJob+=1;
                     break;
                 }
             }
