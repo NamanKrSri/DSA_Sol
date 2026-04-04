@@ -1,3 +1,4 @@
+package LeetCodeProblems;
 public class LeetCodeProb1545Recursive {
     public static char findKthBit(int n, int k) {
         int len=1<<n;// it is equal to 2^n;
@@ -10,7 +11,7 @@ public class LeetCodeProb1545Recursive {
         else if(k==len) return '1';
         else{
             //it means find char at len-k index of
-            char ch=findKthBit(n,len-k);
+            char ch=findKthBit(n-1,len-k);
             return ch=='1'?'0':'1';
         }
     }

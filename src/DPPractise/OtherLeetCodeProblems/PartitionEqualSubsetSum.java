@@ -1,5 +1,10 @@
 package DPPractise.OtherLeetCodeProblems;
 import java.util.*;
+/*
+416. Partition Equal Subset Sum
+Given an integer array nums, return true if you can partition the array into two subsets such that the sum of the elements in both
+subsets is equal or false otherwise.
+ */
 public class PartitionEqualSubsetSum {
         public static boolean canPartition(int[] nums) {
             HashMap<Integer,Integer> map=new HashMap<>();

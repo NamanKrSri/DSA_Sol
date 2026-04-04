@@ -1,3 +1,5 @@
+package LeetCodeProblems;
+
 public class LeetCodeProb1545BruteForce {
     public static char findKthBit(int n, int k) {
         int n2=n;
